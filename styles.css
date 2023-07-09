@@ -1,0 +1,159 @@
+.image-gallery-container {
+      background-color: #1B9C85;
+    color: white;
+    padding: 20px;
+    margin: 0 30px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+
+/* CSS for the page header */
+header {
+  position: relative;
+  background-color: #FF6D60; /* Dark gray color */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.rounded-image {
+ position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5%;
+    height: 100px;
+}
+
+.left-image {
+  left: 20px;
+}
+
+.right-image {
+  right: 20px;
+}
+
+
+/* CSS for the main container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.large-icon {
+  font-size: 48px;
+}
+
+
+/* CSS for the message container */
+.message-container {
+  flex-basis: 48%;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: #98D8AA; /* Dark gray color */
+  border-radius: 10px;
+  /*border: 1px solid #333333;*/ /* Dark gray color */
+}
+
+/* CSS for the name input, message input, and submit button */
+.name-input,
+.message-input {
+  display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: none;
+  /*background-color: #333333;*/ /* Dark gray color */
+}
+
+.k{
+  margin-left: 20px;
+}
+
+.submit-button {
+  background-color: #444444; /* Darker gray color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #555555; /* Darker gray color */
+}
+
+/* CSS for the message list */
+.message-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.message-item {
+  margin-bottom: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid #333;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.message-name {
+  font-weight: bold;
+}
+
+.message-content {
+  display: inline;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  .rounded-image {
+    height: 60px;
+  }
+
+  .message-container {
+    margin-left: 0;
+  }
+
+  .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.k{
+  margin-top: 20px;
+}
+
+  .name-input,
+  .message-input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .submit-button {
+    padding: 8px 16px;
+  }
+}
